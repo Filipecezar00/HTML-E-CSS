@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Criando um formulário</h1>
+    <form action="cadastro.php" method="get">
+    <p>
+        <label for="NOME">NOME:</label>
+        <input type="text" name="NOME" id="NOME" required autocomplete="on" maxlength="10" minlength="0" placeholder="Apelido" autocomplete="name">
+
+    </p>
+    <p>
+        <label for="mes">Mês da nota:</label>
+        <input type="month" name="Mês da nota" id="Mês da nota" value="2025-04">
+
+    </p>
+    <p>
+        <label for="media">média</label>
+        <input type="number" name="media" id="media" max="10" min="0" placeholder="0 a 10" step="0.5" value="0">
+    </p>
+
+    <input type="submit" value="ENVIAR">
+    <input type="reset" value="LIMPAR">
+</form>
+
+</body>
+</html>
