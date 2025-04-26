@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+   <fieldset>
+       
+        <form action="cadastro.php" method="post">
+           <p>
+             <label for="nome">NAME:</label>
+              <input type="text" name="name" id="name" placeholder="write name" minlength="5" maxlength="20" required>
+           </p>
+            <p>
+               <label for="Born">BORN:</label>
+               <input type="date" name="born" id="born"  required>
+           </p>
+           <p>
+               <label for="Number">NUMBER:</label>
+               <input type="tel" name="Number" id="Number" placeholder="(XX) XXXX-XXXX">
+           </p>
+
+           <p>
+
+            <label for="radio">SEX:</label> <br>
+            <input type="radio" name="SEX" id="WOMAN" required> <label for="SEX">WOMAN</label> <br> 
+            <input type="radio" name="SEX" id="MAN" required> <label for="SEX">MAN</label> <br>
+
+           </p>
+
+           <p>
+
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="CLEAN">
+           </p>
+        </form>
+   </fieldset>
+</body>
+</html>
