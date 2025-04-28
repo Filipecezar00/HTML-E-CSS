@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="est">Estados do Brasil:</label>
+            <select name="est" id="est">
+ 
+                <option value="" selected>--Escolha o seu--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PA">Porto Alegre</option>
+                    <option value="PR">Parana</option>
+                </optgroup>
+  
+                <optgroup label="Centro-Oeste">
+                    <option value="MS">Mato Grosso do sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goias</option>
+
+                </optgroup>
+                <optgroup label="Nordeste">
+                <option value="Bahia">Bahia</option>
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="TR">Tocantins</option>
+                <option value="CE">Ceara</option>
+            </optgroup>
+
+                <optgroup label="Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
+                    <option value="PR">Pará</option>
+                </optgroup>
+            </select>
+
+        </p>
+
+            <p> 
+                <label for="prof">Profissões</label>
+                <input type="text" name="prof" id="prof" list="lstpr">       
+                <datalist id="lstpr">
+                    <option value="adm">Administrador</option>
+                    <option value="Eng">Engenheiro</option>
+                    <option value="dev">Desenvolvedor</option>
+                    <option value="prof">Professor</option>
+
+
+                </datalist>
+            </p>
+
+            <p>
+               <label for="msg">mensagem:</label> <br>
+               <textarea name="Mensagem" id="msg" cols="20" rows="5"></textarea>
+
+            </p>
+<p>
+<input type="submit">
+<input type="reset" value="RESET">
+
+
+</p>
+
+
+
+    </form>
+</body>
+</html>
